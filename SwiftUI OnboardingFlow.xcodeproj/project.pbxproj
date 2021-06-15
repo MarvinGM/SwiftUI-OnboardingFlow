@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,6 +11,7 @@
 		574A2CB126787F29004D1DE0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574A2CB026787F29004D1DE0 /* ContentView.swift */; };
 		574A2CB326787F2A004D1DE0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 574A2CB226787F2A004D1DE0 /* Assets.xcassets */; };
 		574A2CB626787F2A004D1DE0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 574A2CB526787F2A004D1DE0 /* Preview Assets.xcassets */; };
+		574A2CBF2678813D004D1DE0 /* ConcentricOnboarding in Frameworks */ = {isa = PBXBuildFile; productRef = 574A2CBE2678813D004D1DE0 /* ConcentricOnboarding */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				574A2CBF2678813D004D1DE0 /* ConcentricOnboarding in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +87,9 @@
 			dependencies = (
 			);
 			name = "SwiftUI OnboardingFlow";
+			packageProductDependencies = (
+				574A2CBE2678813D004D1DE0 /* ConcentricOnboarding */,
+			);
 			productName = "SwiftUI OnboardingFlow";
 			productReference = 574A2CAB26787F29004D1DE0 /* SwiftUI OnboardingFlow.app */;
 			productType = "com.apple.product-type.application";
@@ -112,6 +117,9 @@
 				Base,
 			);
 			mainGroup = 574A2CA226787F29004D1DE0;
+			packageReferences = (
+				574A2CBD2678813D004D1DE0 /* XCRemoteSwiftPackageReference "ConcentricOnboarding" */,
+			);
 			productRefGroup = 574A2CAC26787F29004D1DE0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -326,6 +334,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		574A2CBD2678813D004D1DE0 /* XCRemoteSwiftPackageReference "ConcentricOnboarding" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/exyte/ConcentricOnboarding";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.6;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		574A2CBE2678813D004D1DE0 /* ConcentricOnboarding */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 574A2CBD2678813D004D1DE0 /* XCRemoteSwiftPackageReference "ConcentricOnboarding" */;
+			productName = ConcentricOnboarding;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 574A2CA326787F29004D1DE0 /* Project object */;
 }
